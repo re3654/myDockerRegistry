@@ -27,5 +27,5 @@ jobs:
 
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://registry.io/nvidia/cuda11.1.1-runtime-rockylinux8 docker://registry.cn-hangzhou.aliyuncs.com/renbin_registry/docker-hub/cuda11.1.1-runtime-rockylinux8
+         skopeo copy docker://registry.io/nvidia/cuda:11.1.1-runtime-rockylinux8 docker://registry.cn-hangzhou.aliyuncs.com/renbin_registry/docker-hub/cuda11.1.1-runtime-rockylinux8
       # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
